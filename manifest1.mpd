@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:mpeg:dash:schema:mpd:2011" type="static" minBufferTime="PT2S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011" mediaPresentationDuration="PT3200S">
+	<Period bitstreamSwitching="true">
+		<AdaptationSet mimeType="audio/mp4" codecs="mp4a.40.2" startWithSAP="1" segmentAlignment="true">
+			<SegmentTemplate timescale="1000000"  initialization="ai_$RepresentationID$.mp4d" media="a_$RepresentationID$_$Number$.mp4d" duration="2001999.9999999998" startNumber="671"></SegmentTemplate>
+			<Representation id="318005" bandwidth="64000"></Representation>
+		</AdaptationSet>
+		<AdaptationSet mimeType="video/mp4" startWithSAP="1" segmentAlignment="true">
+			<SegmentTemplate timescale="1000000" initialization="vi_$RepresentationID$.mp4d" media="v_$RepresentationID$_$Number$.mp4d" duration="2001999.9999999998" startNumber="671"></SegmentTemplate>
+				<BaseURL>https://d1j4afzfzpj5sx.cloudfront.net/lic(b785a813-0000-00E9-0F69-6C886a03ecfa)/lewo_ancrz/lewo_ancrz/</BaseURL>
+			<Representation id="5464920" codecs="avc1.640028" width="1920" height="1080" bandwidth="5464920"></Representation>
+		</AdaptationSet>
+	</Period>
+</MPD>
